@@ -11,6 +11,13 @@
 		4C8991A7271B50E50059006A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991A6271B50E50059006A /* ContentView.swift */; };
 		4C8991A9271B50E60059006A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8991A8271B50E60059006A /* Assets.xcassets */; };
 		4C8991AC271B50E60059006A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8991AB271B50E60059006A /* Preview Assets.xcassets */; };
+		4C8991B3271B51150059006A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991B2271B51150059006A /* Product.swift */; };
+		4C8991B7271B519D0059006A /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991B6271B519D0059006A /* ProductView.swift */; };
+		4C8991B9271B604C0059006A /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991B8271B604C0059006A /* ProductCellView.swift */; };
+		4C8991BB271B61A60059006A /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BA271B61A60059006A /* ProductListView.swift */; };
+		4C8991BD271B65510059006A /* ProductExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BC271B65510059006A /* ProductExplorerView.swift */; };
+		4C8991BF271B6D7A0059006A /* ProductEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BE271B6D7A0059006A /* ProductEditView.swift */; };
+		4C8991C2271B6E940059006A /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8991C4271B6E940059006A /* English.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		4C8991A6271B50E50059006A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C8991A8271B50E60059006A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8991AB271B50E60059006A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C8991B2271B51150059006A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4C8991B6271B519D0059006A /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		4C8991B8271B604C0059006A /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		4C8991BA271B61A60059006A /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		4C8991BC271B65510059006A /* ProductExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductExplorerView.swift; sourceTree = "<group>"; };
+		4C8991BE271B6D7A0059006A /* ProductEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditView.swift; sourceTree = "<group>"; };
+		4C8991C3271B6E940059006A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +65,12 @@
 		4C8991A3271B50E50059006A /* Zaiko */ = {
 			isa = PBXGroup;
 			children = (
+				4C8991B5271B518D0059006A /* View */,
+				4C8991B4271B511B0059006A /* Model */,
 				4C8991A4271B50E50059006A /* ZaikoApp.swift */,
-				4C8991A6271B50E50059006A /* ContentView.swift */,
 				4C8991A8271B50E60059006A /* Assets.xcassets */,
 				4C8991AA271B50E60059006A /* Preview Content */,
+				4C8991C4271B6E940059006A /* English.strings */,
 			);
 			path = Zaiko;
 			sourceTree = "<group>";
@@ -65,6 +81,27 @@
 				4C8991AB271B50E60059006A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C8991B4271B511B0059006A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C8991B2271B51150059006A /* Product.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4C8991B5271B518D0059006A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C8991A6271B50E50059006A /* ContentView.swift */,
+				4C8991B6271B519D0059006A /* ProductView.swift */,
+				4C8991B8271B604C0059006A /* ProductCellView.swift */,
+				4C8991BA271B61A60059006A /* ProductListView.swift */,
+				4C8991BC271B65510059006A /* ProductExplorerView.swift */,
+				4C8991BE271B6D7A0059006A /* ProductEditView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +164,7 @@
 			files = (
 				4C8991AC271B50E60059006A /* Preview Assets.xcassets in Resources */,
 				4C8991A9271B50E60059006A /* Assets.xcassets in Resources */,
+				4C8991C2271B6E940059006A /* English.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +175,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8991BD271B65510059006A /* ProductExplorerView.swift in Sources */,
+				4C8991BB271B61A60059006A /* ProductListView.swift in Sources */,
+				4C8991BF271B6D7A0059006A /* ProductEditView.swift in Sources */,
+				4C8991B7271B519D0059006A /* ProductView.swift in Sources */,
 				4C8991A7271B50E50059006A /* ContentView.swift in Sources */,
+				4C8991B9271B604C0059006A /* ProductCellView.swift in Sources */,
 				4C8991A5271B50E50059006A /* ZaikoApp.swift in Sources */,
+				4C8991B3271B51150059006A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C8991C4271B6E940059006A /* English.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8991C3271B6E940059006A /* en */,
+			);
+			name = English.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C8991AD271B50E60059006A /* Debug */ = {
