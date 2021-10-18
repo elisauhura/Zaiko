@@ -14,9 +14,9 @@ struct ZaikoApp: App {
     init() {
         if let data = UserDefaults.standard.object(forKey: "Zaiko") as? Data,
          let model = Zaiko.decode(data: data) {
-            self.model = Zaiko.sample() //model
+            self.model = model
         } else {
-            self.model = Zaiko.sample() //empty()
+            self.model = Zaiko.empty()
         }
     }
     

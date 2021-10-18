@@ -9,6 +9,8 @@ import SwiftUI
 
 struct BookView: View {
     @ObservedObject var model: Zaiko
+    @State var refresh: Bool = false
+    
     var entries: [UUID:Int] {
         model.bookEntries()
     }
@@ -27,7 +29,11 @@ struct BookView: View {
                     ProductCellWithCountView(product: model.productWith(id: uuid), count: entries[uuid]!)
                 }
             }
+            .opacity(refresh ? 1.0 : 1.0)
             .navigationTitle("Inventory")
+            .onAppear {
+                refresh.toggle()
+            }
         }
     }
 }

@@ -19,6 +19,11 @@
 		4C8991BD271B65510059006A /* ProductExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BC271B65510059006A /* ProductExplorerView.swift */; };
 		4C8991BF271B6D7A0059006A /* ProductEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BE271B6D7A0059006A /* ProductEditView.swift */; };
 		4CF33503271CFE2700BB900B /* ProductWithSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF33502271CFE2700BB900B /* ProductWithSheetView.swift */; };
+		4CF33505271D0B1B00BB900B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF33504271D0B1B00BB900B /* Event.swift */; };
+		4CF33507271D433B00BB900B /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF33506271D433B00BB900B /* CreateEventView.swift */; };
+		4CF33509271D4B5B00BB900B /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF33508271D4B5B00BB900B /* EventListView.swift */; };
+		4CF3350B271D573E00BB900B /* EventManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3350A271D573E00BB900B /* EventManageView.swift */; };
+		4CF3350D271D5D2D00BB900B /* ProductListToAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3350C271D5D2C00BB900B /* ProductListToAddView.swift */; };
 		4CFF3616271C921700595F2C /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF3615271C921700595F2C /* Sheet.swift */; };
 		4CFF3618271C9E2C00595F2C /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF3617271C9E2C00595F2C /* BookView.swift */; };
 		4CFF361A271C9EDA00595F2C /* ProductCellWithCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF3619271C9EDA00595F2C /* ProductCellWithCountView.swift */; };
@@ -43,6 +48,11 @@
 		4CCDC1F0271CD87D00149F7C /* Zaiko.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zaiko.entitlements; sourceTree = "<group>"; };
 		4CCDC1F1271CD89A00149F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4CF33502271CFE2700BB900B /* ProductWithSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWithSheetView.swift; sourceTree = "<group>"; };
+		4CF33504271D0B1B00BB900B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4CF33506271D433B00BB900B /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		4CF33508271D4B5B00BB900B /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		4CF3350A271D573E00BB900B /* EventManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManageView.swift; sourceTree = "<group>"; };
+		4CF3350C271D5D2C00BB900B /* ProductListToAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListToAddView.swift; sourceTree = "<group>"; };
 		4CFF3615271C921700595F2C /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
 		4CFF3617271C9E2C00595F2C /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		4CFF3619271C9EDA00595F2C /* ProductCellWithCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellWithCountView.swift; sourceTree = "<group>"; };
@@ -106,6 +116,7 @@
 				4C8991B2271B51150059006A /* Product.swift */,
 				4C453777271BB0D800ABA642 /* Zaiko.swift */,
 				4CFF3615271C921700595F2C /* Sheet.swift */,
+				4CF33504271D0B1B00BB900B /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -125,6 +136,10 @@
 				4CFF361B271CA00000595F2C /* SheetListView.swift */,
 				4CFF361D271CB2DA00595F2C /* RenameSheetView.swift */,
 				4CFF361F271CB81F00595F2C /* SheetItensView.swift */,
+				4CF33506271D433B00BB900B /* CreateEventView.swift */,
+				4CF33508271D4B5B00BB900B /* EventListView.swift */,
+				4CF3350A271D573E00BB900B /* EventManageView.swift */,
+				4CF3350C271D5D2C00BB900B /* ProductListToAddView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -199,14 +214,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF3350D271D5D2D00BB900B /* ProductListToAddView.swift in Sources */,
 				4C8991BD271B65510059006A /* ProductExplorerView.swift in Sources */,
+				4CF33507271D433B00BB900B /* CreateEventView.swift in Sources */,
 				4C8991BB271B61A60059006A /* ProductListView.swift in Sources */,
 				4CFF361A271C9EDA00595F2C /* ProductCellWithCountView.swift in Sources */,
 				4C8991BF271B6D7A0059006A /* ProductEditView.swift in Sources */,
 				4C8991B7271B519D0059006A /* ProductView.swift in Sources */,
+				4CF3350B271D573E00BB900B /* EventManageView.swift in Sources */,
 				4C453778271BB0D800ABA642 /* Zaiko.swift in Sources */,
 				4CF33503271CFE2700BB900B /* ProductWithSheetView.swift in Sources */,
+				4CF33509271D4B5B00BB900B /* EventListView.swift in Sources */,
 				4C8991A7271B50E50059006A /* ContentView.swift in Sources */,
+				4CF33505271D0B1B00BB900B /* Event.swift in Sources */,
 				4CFF3620271CB81F00595F2C /* SheetItensView.swift in Sources */,
 				4CFF361C271CA00000595F2C /* SheetListView.swift in Sources */,
 				4C8991B9271B604C0059006A /* ProductCellView.swift in Sources */,
@@ -355,6 +375,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +409,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

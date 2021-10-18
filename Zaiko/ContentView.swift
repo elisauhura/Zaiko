@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selection: Int = 2
+    @State var selection: Int = 1
     
     let model: Zaiko
     
@@ -22,7 +22,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Sheets", systemImage: "doc.plaintext")
                 }.tag(2)
-            Text("Reports")
+            EventListView(model: model)
                 .tabItem {
                     Label("Reports", systemImage: "text.badge.checkmark")
                 }.tag(3)
