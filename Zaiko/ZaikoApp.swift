@@ -23,7 +23,7 @@ struct ZaikoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(model: model)
-                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification), perform: {
+                .onReceive(NotificationCenter.default.publisher(for: UIScene.willDeactivateNotification), perform: {
                     _ in
                     UserDefaults.standard.setValue(model.encoded, forKey: "Zaiko")
                 })
