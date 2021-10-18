@@ -81,7 +81,7 @@ class Event: ObservableObject, Codable, Identifiable {
         self.sheetA = try container.decode(UUID?.self, forKey: .sheetA)
         self.sheetB = try container.decode(UUID?.self, forKey: .sheetB)
         self.submitted = try container.decode(Bool.self, forKey: .submitted)
-        self.id = try container.decode(UUID.self, forKey: .sheetB)
+        self.id = try container.decode(UUID.self, forKey: .id)
     }
 
     func encode(to encoder: Encoder) throws {
