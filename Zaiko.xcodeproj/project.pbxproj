@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C453778271BB0D800ABA642 /* Zaiko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C453777271BB0D800ABA642 /* Zaiko.swift */; };
 		4C8991A5271B50E50059006A /* ZaikoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991A4271B50E50059006A /* ZaikoApp.swift */; };
 		4C8991A7271B50E50059006A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991A6271B50E50059006A /* ContentView.swift */; };
 		4C8991A9271B50E60059006A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8991A8271B50E60059006A /* Assets.xcassets */; };
@@ -17,10 +18,17 @@
 		4C8991BB271B61A60059006A /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BA271B61A60059006A /* ProductListView.swift */; };
 		4C8991BD271B65510059006A /* ProductExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BC271B65510059006A /* ProductExplorerView.swift */; };
 		4C8991BF271B6D7A0059006A /* ProductEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8991BE271B6D7A0059006A /* ProductEditView.swift */; };
-		4C8991C2271B6E940059006A /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8991C4271B6E940059006A /* English.strings */; };
+		4CF33503271CFE2700BB900B /* ProductWithSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF33502271CFE2700BB900B /* ProductWithSheetView.swift */; };
+		4CFF3616271C921700595F2C /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF3615271C921700595F2C /* Sheet.swift */; };
+		4CFF3618271C9E2C00595F2C /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF3617271C9E2C00595F2C /* BookView.swift */; };
+		4CFF361A271C9EDA00595F2C /* ProductCellWithCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF3619271C9EDA00595F2C /* ProductCellWithCountView.swift */; };
+		4CFF361C271CA00000595F2C /* SheetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF361B271CA00000595F2C /* SheetListView.swift */; };
+		4CFF361E271CB2DA00595F2C /* RenameSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF361D271CB2DA00595F2C /* RenameSheetView.swift */; };
+		4CFF3620271CB81F00595F2C /* SheetItensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF361F271CB81F00595F2C /* SheetItensView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C453777271BB0D800ABA642 /* Zaiko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaiko.swift; sourceTree = "<group>"; };
 		4C8991A1271B50E50059006A /* Zaiko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zaiko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8991A4271B50E50059006A /* ZaikoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaikoApp.swift; sourceTree = "<group>"; };
 		4C8991A6271B50E50059006A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,7 +40,15 @@
 		4C8991BA271B61A60059006A /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		4C8991BC271B65510059006A /* ProductExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductExplorerView.swift; sourceTree = "<group>"; };
 		4C8991BE271B6D7A0059006A /* ProductEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditView.swift; sourceTree = "<group>"; };
-		4C8991C3271B6E940059006A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
+		4CCDC1F0271CD87D00149F7C /* Zaiko.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zaiko.entitlements; sourceTree = "<group>"; };
+		4CCDC1F1271CD89A00149F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4CF33502271CFE2700BB900B /* ProductWithSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWithSheetView.swift; sourceTree = "<group>"; };
+		4CFF3615271C921700595F2C /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		4CFF3617271C9E2C00595F2C /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		4CFF3619271C9EDA00595F2C /* ProductCellWithCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellWithCountView.swift; sourceTree = "<group>"; };
+		4CFF361B271CA00000595F2C /* SheetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetListView.swift; sourceTree = "<group>"; };
+		4CFF361D271CB2DA00595F2C /* RenameSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameSheetView.swift; sourceTree = "<group>"; };
+		4CFF361F271CB81F00595F2C /* SheetItensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetItensView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +81,13 @@
 		4C8991A3271B50E50059006A /* Zaiko */ = {
 			isa = PBXGroup;
 			children = (
+				4CCDC1F1271CD89A00149F7C /* Info.plist */,
+				4CCDC1F0271CD87D00149F7C /* Zaiko.entitlements */,
 				4C8991B5271B518D0059006A /* View */,
 				4C8991B4271B511B0059006A /* Model */,
 				4C8991A4271B50E50059006A /* ZaikoApp.swift */,
 				4C8991A8271B50E60059006A /* Assets.xcassets */,
 				4C8991AA271B50E60059006A /* Preview Content */,
-				4C8991C4271B6E940059006A /* English.strings */,
 			);
 			path = Zaiko;
 			sourceTree = "<group>";
@@ -87,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				4C8991B2271B51150059006A /* Product.swift */,
+				4C453777271BB0D800ABA642 /* Zaiko.swift */,
+				4CFF3615271C921700595F2C /* Sheet.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -100,6 +119,12 @@
 				4C8991BA271B61A60059006A /* ProductListView.swift */,
 				4C8991BC271B65510059006A /* ProductExplorerView.swift */,
 				4C8991BE271B6D7A0059006A /* ProductEditView.swift */,
+				4CFF3619271C9EDA00595F2C /* ProductCellWithCountView.swift */,
+				4CFF3617271C9E2C00595F2C /* BookView.swift */,
+				4CF33502271CFE2700BB900B /* ProductWithSheetView.swift */,
+				4CFF361B271CA00000595F2C /* SheetListView.swift */,
+				4CFF361D271CB2DA00595F2C /* RenameSheetView.swift */,
+				4CFF361F271CB81F00595F2C /* SheetItensView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -164,7 +189,6 @@
 			files = (
 				4C8991AC271B50E60059006A /* Preview Assets.xcassets in Resources */,
 				4C8991A9271B50E60059006A /* Assets.xcassets in Resources */,
-				4C8991C2271B6E940059006A /* English.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,27 +201,24 @@
 			files = (
 				4C8991BD271B65510059006A /* ProductExplorerView.swift in Sources */,
 				4C8991BB271B61A60059006A /* ProductListView.swift in Sources */,
+				4CFF361A271C9EDA00595F2C /* ProductCellWithCountView.swift in Sources */,
 				4C8991BF271B6D7A0059006A /* ProductEditView.swift in Sources */,
 				4C8991B7271B519D0059006A /* ProductView.swift in Sources */,
+				4C453778271BB0D800ABA642 /* Zaiko.swift in Sources */,
+				4CF33503271CFE2700BB900B /* ProductWithSheetView.swift in Sources */,
 				4C8991A7271B50E50059006A /* ContentView.swift in Sources */,
+				4CFF3620271CB81F00595F2C /* SheetItensView.swift in Sources */,
+				4CFF361C271CA00000595F2C /* SheetListView.swift in Sources */,
 				4C8991B9271B604C0059006A /* ProductCellView.swift in Sources */,
 				4C8991A5271B50E50059006A /* ZaikoApp.swift in Sources */,
+				4CFF3616271C921700595F2C /* Sheet.swift in Sources */,
+				4CFF3618271C9E2C00595F2C /* BookView.swift in Sources */,
+				4CFF361E271CB2DA00595F2C /* RenameSheetView.swift in Sources */,
 				4C8991B3271B51150059006A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4C8991C4271B6E940059006A /* English.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C8991C3271B6E940059006A /* en */,
-			);
-			name = English.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C8991AD271B50E60059006A /* Debug */ = {
@@ -321,18 +342,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zaiko/Zaiko.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zaiko/Preview Content\"";
 				DEVELOPMENT_TEAM = LDL4S5S8SE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Zaiko/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +362,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.uhura.Zaiko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,18 +375,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zaiko/Zaiko.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zaiko/Preview Content\"";
 				DEVELOPMENT_TEAM = LDL4S5S8SE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Zaiko/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,6 +395,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.uhura.Zaiko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

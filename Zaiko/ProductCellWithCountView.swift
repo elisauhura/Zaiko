@@ -1,14 +1,16 @@
 //
-//  ProductCell.swift
+//  ProductCellWithCountView.swift
 //  Zaiko
 //
-//  Created by Elisa Silva on 16/10/21.
+//  Created by Elisa Silva on 17/10/21.
 //
 
 import SwiftUI
 
-struct ProductCellView: View {
-    @ObservedObject var  product: Product;
+struct ProductCellWithCountView: View {
+    @ObservedObject var  product: Product
+    var count: Int
+    
     var body: some View {
         HStack {
             Text(product.emoji)
@@ -25,12 +27,15 @@ struct ProductCellView: View {
                     .font(.footnote)
             }
             Spacer()
+            Text("\(count)")
+                .font(.system(size: 32))
         }
         .padding(.all)
-    }}
+    }
+}
 
-struct ProductCell_Previews: PreviewProvider {
+struct ProductCellWithCountView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCellView(product: Product.sample())
+        ProductCellWithCountView(product: Product.sample(), count: Int.random(in: 0..<100))
     }
 }

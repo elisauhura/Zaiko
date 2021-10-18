@@ -8,23 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selection: Int = 4;
+    @State var selection: Int = 2
+    
+    let model: Zaiko
     
     var body: some View {
         TabView(selection: $selection) {
-            Text("Book")
+            BookView(model: model)
                 .tabItem {
                     Label("Book", systemImage: "book.closed")
                 }.tag(1)
-            Text("Sheets")
+            SheetListView(model: model)
                 .tabItem {
                     Label("Sheets", systemImage: "doc.plaintext")
                 }.tag(2)
             Text("Reports")
                 .tabItem {
-                    Label("Reports", systemImage: "doc.on.doc")
+                    Label("Reports", systemImage: "text.badge.checkmark")
                 }.tag(3)
-            ProductExplorerView()
+            ProductExplorerView(model: model)
                 .tabItem {
                     Label("Products", systemImage: "bag")
                 }.tag(4)
@@ -34,6 +36,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(model: Zaiko.sample())
     }
 }

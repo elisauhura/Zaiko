@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ProductEditView: View {
-    @State var name: String = ""
+    @ObservedObject var product: Product
     
     var body: some View {
         Form {
-            TextField(LocalizedStringKey("ProductName"), text: $name)
+            TextField("Product Name", text: $product.name)
+            TextField("Product Description", text: $product.description)
+            TextField("Product Emoji", text: $product.emoji)
         }
     }
 }
 
 struct ProductEditView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductEditView()
+        ProductEditView(product: Product.sample())
     }
 }

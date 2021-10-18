@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ProductListView: View {
-    let products: [Product];
+    @ObservedObject var model: Zaiko
+    
     var body: some View {
-        List(products) { product in
+        List(model.products) { product in
             NavigationLink(destination: ProductView(product: product)) {
                 ProductCellView(product: product)
             }
@@ -20,6 +21,6 @@ struct ProductListView: View {
 
 struct ProductListView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductListView(products: Product.samples())
+        ProductListView(model: Zaiko.sample())
     }
 }

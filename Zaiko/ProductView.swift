@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ProductView: View {
-    let product: Product;
+    @ObservedObject var product: Product
+    @State var isEditing: Bool = false
+    
     var body: some View {
         VStack {
-            Circle()
-                .frame(width: 96.0, height: 96.0)
-                .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+            Text(product.emoji)
+                .font(.system(size: 64))
+                .background(
+                    Circle()
+                        .frame(width: 96, height: 96)
+                        .foregroundColor(Color(white: 0.8))
+                ).frame(width: 96, height: 96)
             Text(product.name)
                 .font(.title)
                 .padding(.top)
@@ -24,10 +30,24 @@ struct ProductView: View {
                 .padding(.top)
             Spacer()
         }
+        .popover(isPresented: $isEditing) {
+            NavigationView {
+                ProductEditView(product: product)
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        Button(action: {
+                            isEditing.toggle()
+                        }) {
+                            Text("Return")
+                        }
+                    }
+            }.frame(minWidth: 300, minHeight: 300)
+        }
         .padding(.all)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
+                    isEditing.toggle()
                 }) {
                     Text("Edit")
                 }
@@ -38,6 +58,9 @@ struct ProductView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView(product: Product(id: NSUUID(), name: "Sample", description: "A sample product"))
+        NavigationView {
+            ProductView(product: Product.sample()).navigationTitle("Sample")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }

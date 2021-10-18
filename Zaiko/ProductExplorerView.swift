@@ -8,18 +8,40 @@
 import SwiftUI
 
 struct ProductExplorerView: View {
+    let model: Zaiko
+    var newProduct = Product.empty()
+    
+    @State var addNew: Bool = false
+    
     var body: some View {
         NavigationView {
-            ProductListView(products: Product.samples())
+            ProductListView(model: model)
                 .navigationTitle("Products")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: {
-                            print("Pressed")
+                            addNew.toggle()
+                            newProduct.reset()
                         }) {
                             Image(systemName: "plus")
                         }
                     }
+                }
+                .popover(isPresented: $addNew) {
+                    NavigationView {
+                        ProductEditView(product: newProduct)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .toolbar {
+                                ToolbarItem(placement: .navigationBarTrailing) {
+                                    Button(action: {
+                                        addNew.toggle()
+                                        model.products.append(newProduct.copy())
+                                    }) {
+                                        Text("Add")
+                                    }
+                                }
+                            }
+                    }.frame(minWidth: 300, minHeight: 300)
                 }
                          
         }
@@ -28,6 +50,6 @@ struct ProductExplorerView: View {
 
 struct ProductExplorerView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductExplorerView()
+        ProductExplorerView(model: Zaiko.sample())
     }
 }
